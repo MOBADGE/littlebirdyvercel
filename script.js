@@ -378,7 +378,8 @@ function renderCategory(page, data) {
 }
 
 async function fetchLiveData() {
-  const response = await fetch("./api/briefs?category=all", {
+  const response = await fetch("./api?category=all", {
+
     headers: {
       Accept: "application/json",
     },
